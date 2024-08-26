@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Page Meta Tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+
+  <!-- Fix for custom scrollbar if JS is disabled -->
+  <noscript>
+    <style>
+      .simplebar-content-wrapper {
+        overflow: auto;
+      }
+    </style>
+  </noscript>
+
+  <!-- Page Title -->
+  <title>Research - Echohydrology Lab</title>
+  <link rel="icon" href="./assets/images/E.png" type="image/png">
+
+  <style>
+    body {
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .navbar {
+      background-color: #f0f0f0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      box-shadow: 0 4px 6px rgba(9, 9, 9, 0.1);
+    }
+
+    .nav-title {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 2.5rem;
+      color: #060606;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 6px rgba(9, 9, 9, 0.1);
+
+    }
+
+    .video-background {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      box-shadow: 0 4px 6px rgba(10, 6, 6, 0.1);
+    }
+
+    #background-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .nav-logo {
+      position: absolute; /* Make logo position absolute */
+      top: 0.01px; /* Adjust top position */
+      left: 20px; /* Adjust left position */
+      z-index: 1001; /* Ensure logo is above the video */
+    }
+
+    .nav-logo img {
+      width: 190px;
+      height: 80px;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .nav-links a {
+      color: #060606;
+      margin-left: 20px;
+      padding-bottom: 20px;
+      font-size: large;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-align: center;
+    }
+    .nav-links a:hover {
+    color: rgb(68, 91, 208); /* Change color to grey on hover */
+    
+}
+
+    /* Font and Font Size Modification */
+    h1.display-3 {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .subtitle-md {
+      font-size: 0.9rem;
+      color: grey;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .small {
+      color: white;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .img-fluid {
+      width: 470px;
+      height: 350px;
+      object-fit: cover;
+      box-shadow: 0 4px 6px rgba(10, 6, 6, 0.1);
+    }
+
+    .team-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .team-member {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: left;
+      box-sizing: border-box;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #f0f0f0;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .img-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1;
+      margin-right: -400px;
+      margin-left: -30px;
+      justify-content: left;
+      margin-top: 10px;
+     
+    }
+
+    .img-container img {
+      border-radius: 1px;
+      border-color: #282217;
+    }
+
+    .text-container {
+      padding: 10px;
+      padding-right: 30px;
+      padding-left: 180px;
+      border-radius: 5px;
+      overflow: hidden;
+      word-wrap: break-word;
+      box-sizing: border-box;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .text-container p,
+    .text-container label {
+      font-size:22px;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .learn-more-btn {
+      display: inline-block;
+      padding: 5px 10px;
+      color: black;
+      background-color: white;
+      border: 2px solid black;
+      border-radius: 3px;
+      text-decoration: none;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 15px;
+      text-align: center;
+      transition: all 0.3s ease;
+      width: 120px;
+    }
+
+    .learn-more-btn:hover {
+      background-color: black;
+      color: white;
+      border: 2px solid black;
+    }
+
+    footer {
+      background-color: #282217;
+      color: white;
+      width: 100%;
+      text-align: center;
+      padding-top: 22px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size:medium;
+    }
+
+    .research-text {
+      font-family:'Poppins', 'sans-serif';
+      font-size:40px;
+      color: #060606;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .container {
+      padding-bottom: 10px;
+    }
+
+    .container-pub {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      background-color: white;
+      padding-bottom: 10px;
+      padding-top:10px;
+      
+    }
+    .container-pub2 {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      box-shadow: none;
+    }
+    .paper-link{
+      color: #000000; /* Link color */
+      text-decoration: none;
+      font-family:'Times New Roman', Times, serif;
+    }
+.paper-link:hover {
+    color: #3a5ed3; /* Light grey color on hover */
+}
+.custom-font {
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-links">
+      <a class="nav-link" href="./index.html">Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+      <a class="nav-link" href="./team.html">Team &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+      <a class="nav-link" href="./research.html">Research &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+      <a class="nav-link" href="./joinus.html">Join Us</a>
+    </div>
+    <div class="nav-logo">
+      <img src="./assets/images/file2.png" alt="logo">
+    </div>
+  </nav>
+  <!-- / Navbar -->
+
+  <!-- Locomotive Scroll Container -->
+  <div data-scroll-container>
+    <!-- Research Text Section -->
+    <div class="video-background">
+      <video autoplay muted loop id="background-video">
+        <source src="/Users/ramitadeshmukh/Downloads/RA_WEBSITE/EcohydrologyLab/dist/assets/images/covertrees.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="research-text"><span>RESEARCH THEMES</span></div>
+
+    <!-- / Research Text Section -->
+
+    <!-- Main Section -->
+    <section class="container py-3">
+      <!-- Page Content Goes Here -->
+      <div class="container-pub2">
+        <div class="team-grid">
+          <!-- Member 1 -->
+          <div class="team-member">
+            <div class="img-container">
+              <img class="img-fluid" src="./assets/images/R1-.jpg" alt="image">
+            </div>
+            <div class="text-container">
+              <p class="custom-font lead mb-4 mt-2">Understand the patterns and drivers of forest mortality, across a range of spatial scales and ecosystem types</p>
+              <a href="./research1.html"  target="_blank" class="learn-more-btn">Learn More</a>
+            </div>
+          </div>
+          <!-- / Member 1 -->
+          <!-- Member 2 -->
+          <div class="team-member">
+            <div class="img-container">
+              <img class="img-fluid" src="./assets/images/R5-.JPG" alt="image">
+            </div>
+            <div class="text-container">
+              <p class="custom-font lead mb-4 mt-2">Develop science-based adaptation and mitigation strategies for forest management in an increasingly warming and drying world</p>
+              <a href="./research2.html" target="_blank" class="learn-more-btn">Learn More</a>
+            </div>
+          </div>
+          <!-- / Member 2 -->
+          <!-- Member 3 -->
+          <div class="team-member">
+            <div class="img-container">
+              <img class="img-fluid" src="./assets/images/R3-.jpg" alt="image">
+            </div>
+            <div class="text-container">
+              <p class="custom-font lead mb-4 mt-2">Assess the resilience of groundwater dependent ecosystems during climate extremes and their role in promoting post-disturbance recovery</p>
+              <a href="./research3.html"  target="_blank" class="learn-more-btn">Learn More</a>
+            </div>
+          </div>
+          <!-- / Member 3 -->
+        </div>
+      </div>
+    </section>
+    <!-- / Main Section -->
+
+
+        <!-- Sub Section -->
+        <section class="container py-3">
+          <!-- Page Content Goes Here -->
+          <b><span style="font-size: 27px; font-family:cursive"><i>Publications</i></span></b><br>
+          <div class="container-pub">
+              <div class="container-pub">
+                  <ul>
+                    <!-- Publications List -->
+                
+                    <a class="paper-link" href="https://iopscience.iop.org/article/10.1088/1748-9326/ad29aa/meta" target="_blank">Mitigating drought mortality by incorporating topography into variable forest thinning strategies</a>
+                    <!-- Publication Details -->
+                    <p class="subtitle-md"><i>Thomas, A., Kolb, T., Biederman, J., Venturas, M.D., Ma, Q., Yang, D., Dore, S. and Tai, X., 2024. Mitigating drought mortality by incorporating topography into variable forest thinning strategies. Environmental Research Letters.</i></p>
+                    
+                  
+  
+                    <a class="paper-link" href="https://www.nature.com/articles/s41467-023-43083-8" target="_blank">Tree mortality during long-term droughts is lower in structurally complex forest stands</a>
+                    <p class="subtitle-md"><i>Ma, Q., Su, Y., Niu, C., Ma, Q., Hu, T., Luo, X., Tai, X., Qiu, T., Zhang, Y., Bales, R.C. and Liu, L., 2023. Tree mortality during long-term droughts is lower in structurally complex forest stands. Nature communications, 14(1), p.7467.</i></p>
+                    
+                    <a class="paper-link" href="https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/ecs2.4633" target="_blank">Integrating forest structural diversity measurement into ecological research</a>
+                    <p class="subtitle-md"><i>Atkins, J.W., Bhatt, P., Carrasco, L., Francis, E., Garabedian, J.E., Hakkenberg, C.R., Hardiman, B.S., Jung, J., Koirala, A., LaRue, E.A. and Oh, S., 2023. Integrating forest structural diversity measurement into ecological research. Ecosphere, 14(9), p.e4633.</i></p>
+          
+                    <a class="paper-link" href="https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.16529?casa_token=zXXir7_8UtwAAAAA%3ACmEagWYtScJNJOOtnZISJSVo9O-pCFHma7eXupEmP7ehtNoLpPFJ2iVKWe4RO9w_RIa1zwh8B7pjkmQ" target="_blank">Linking remotely sensed ecosystem resilience with forest mortality across the continental United States</a>
+                    <p class="subtitle-md"><i>Tai, X., Trugman, A.T. and Anderegg, W.R., 2023. Linking remotely sensed ecosystem resilience with forest mortality across the continental United States. Global Change Biology, 29(4), pp.1096-1105.</i></p>
+                    
+              
+  
+                    <a class="paper-link" href="https://iopscience.iop.org/article/10.1088/1748-9326/ac3b17/meta" target="_blank">Enhanced drought resistance of vegetation growth in cities due to urban heat, CO<sub>2</sub> domes and O<sub>3</sub> troughs</a>
+                    <p class="subtitle-md"><i>Fu, P., Hu, L., Ainsworth, E.A., Tai, X., Myint, S.W., Zhan, W., Blakely, B.J. and Bernacchi, C.J., 2021. Enhanced drought resistance of vegetation growth in cities due to urban heat, CO2 domes and O3 troughs. Environmental Research Letters, 16(12), p.124052.</i></p>
+          
+                    <a class="paper-link" href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021WR030605" target="_blank">Groundwater‐Mediated Memory of Past Climate Controls Water Yield in Snowmelt‐Dominated Catchments</a>
+                    <p class="subtitle-md"><i>Brooks, P.D., Gelderloos, A., Wolf, M.A., Jamison, L.R., Strong, C., Solomon, D.K., Bowen, G.J., Burian, S., Tai, X., Arens, S. and Briefer, L., 2021. Groundwater‐mediated memory of past climate controls water yield in snowmelt‐dominated catchments. Water Resources Research, 57(10), p.e2021WR030605.</i></p>
+          
+                    <a class="paper-link" href="https://iopscience.iop.org/article/10.1088/1748-9326/ac1135/meta" target="_blank">Lateral subsurface flow modulates forest mortality risk to future climate and elevated CO<sub>2</sub></a>
+                    <p class="subtitle-md"><i>Tai, X., Venturas, M.D., Mackay, D.S., Brooks, P.D. and Flanagan, L.B., 2021. Lateral subsurface flow modulates forest mortality risk to future climate and elevated CO2. Environmental Research Letters, 16(8), p.084015.</i></p>
+          
+                    <a class="paper-link" href="https://onlinelibrary.wiley.com/doi/full/10.1002/eco.2256?casa_token=UOlcEkpmLocAAAAA%3ALcMF4zPB5FugBVGc06YFZ3yM-O8JZFeJVpCrVkwGogvSD9TnnOmzPpiTrBTtwQrfxhPzTQdTAH9lm7Y" target="_blank">Increasing plant water stress and decreasing summer streamflow in response to a warmer and wetter climate in seasonally snow‐covered forests</a>
+                    <p class="subtitle-md"><i>Christensen, L., Adams, H.R., Tai, X., Barnard, H.R. and Brooks, P.D., 2021. Increasing plant water stress and decreasing summer streamflow in response to a warmer and wetter climate in seasonally snow‐covered forests. Ecohydrology, 14(1), p.e2256.</i></p>
+                    
+                 
+  
+                    <a class="paper-link" href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020WR027630" target="_blank">Hillslope Hydrology Influences the Spatial and Temporal Patterns of Remotely Sensed Ecosystem Productivity</a>
+                    <p class="subtitle-md"><i>Tai, X., Anderegg, W.R., Blanken, P.D., Burns, S.P., Christensen, L. and Brooks, P.D., 2020. Hillslope hydrology influences the spatial and temporal patterns of remotely sensed ecosystem productivity. Water Resources Research, 56(11), p.e2020WR027630.</i></p>
+          
+                    <a class="paper-link" href="https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.16043" target="_blank">Conifers depend on established roots during drought: results from a coupled model of carbon allocation and hydraulics</a>
+                    <p class="subtitle-md"><i>Mackay, D.S., Savoy, P.R., Grossiord, C., Tai, X., Pleban, J.R., Wang, D.R., McDowell, N.G., Adams, H.D. and Sperry, J.S., 2020. Conifers depend on established roots during drought: results from a coupled model of carbon allocation and hydraulics. New Phytologist, 225(2), pp.679-692.</i></p>
+                  
+                 
+  
+                    <a class="paper-link" href="https://www.pnas.org/doi/abs/10.1073/pnas.1913072116" target="_blank">The impact of rising CO<sub>2</sub> and acclimation on the response of US forests to global warming</a>
+                    <p class="subtitle-md"><i>Sperry, J.S., Venturas, M.D., Todd, H.N., Trugman, A.T., Anderegg, W.R., Wang, Y. and Tai, X., 2019. The impact of rising CO2 and acclimation on the response of US forests to global warming. Proceedings of the National Academy of Sciences, 116(51), pp.25734-25744.</i></p>
+        
+                    <a class="paper-link" href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019JG005272" target="_blank">Plant Hydraulic Stress Explained Tree Mortality and Tree Size Explained Beetle Attack in a Mixed Conifer Forest</a>
+                    <p class="subtitle-md"><i>Tai, X., Mackay, D.S., Ewers, B.E., Parsekian, A.D., Beverly, D., Speckman, H., Brooks, P.D. and Anderegg, W.R., 2019. Plant hydraulic stress explained tree mortality and tree size explained beetle attack in a mixed conifer forest. Journal of Geophysical Research: Biogeosciences, 124(11), pp.3555-3568.</i></p>
+          
+                    <a class="paper-link" href="https://academic.oup.com/aobpla/article/11/5/plz056/5572643" target="_blank">Six co-occurring conifer species in northern Idaho exhibit a continuum of hydraulic strategies during an extreme drought year</a>
+                    <p class="subtitle-md"><i>Baker, K.V., Tai, X., Miller, M.L. and Johnson, D.M., 2019. Six co-occurring conifer species in northern Idaho exhibit a continuum of hydraulic strategies during an extreme drought year. AoB Plants, 11(5), p.plz056.</i></p>
+        
+  
+                    <a class="paper-link" href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018WR023468" target="_blank">Dependence of Aspen Stands on a Subsurface Water Subsidy: Implications for Climate Change Impacts</a>
+                    <p class="subtitle-md"><i>Love, D.M., Venturas, M.D., Sperry, J.S., Brooks, P.D., Pettit, J.L., Wang, Y., Anderegg, W.R.L., Tai, X. and Mackay, D.S., 2019. Dependence of aspen stands on a subsurface water subsidy: Implications for climate change impacts. Water Resources Research, 55(3), pp.1833-1848.</i></p>
+                    
+        
+  
+                    <a class="paper-link" href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018WR022801" target="_blank">Distributed Plant Hydraulic and Hydrological Modeling to Understand the Susceptibility of Riparian Woodland Trees to Drought-Induced Mortality</a>
+                    <p class="subtitle-md"><i>Tai, X., Mackay, D.S., Sperry, J.S., Brooks, P., Anderegg, W.R., Flanagan, L.B., Rood, S.B. and Hopkinson, C., 2018. Distributed plant hydraulic and hydrological modeling to understand the susceptibility of riparian woodland trees to drought‐induced mortality. Water Resources Research, 54(7), pp.4901-4915.</i></p>
+        
+  
+                    <a class="paper-link" href="https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.14098" target="_blank">Plant hydraulics improves and topography mediates prediction of aspen mortality in southwestern USA</a>
+                    <p class="subtitle-md"><i>Tai, X., Mackay, D.S., Anderegg, W.R., Sperry, J.S. and Brooks, P.D., 2017. Plant hydraulics improves and topography mediates prediction of aspen mortality in southwestern USA. New Phytologist, 213(1), pp.113-127.</i></p>
+                    <!-- Repeat similar structure for other publications -->
+                  </ul>
+                  <!-- / Publications List -->
+                  <!-- /Page Content -->
+                </div>
+          </div>
+        </section>
+        <!-- / Sub Section -->
+
+    <!-- Footer -->
+    <footer class="border-top">
+      <div class="container d-flex justify-content-between">
+        <p class="small" style="font-size: 14px; font-family:'Times New Roman', Times, serif">© 2024 Xiaonan Tai. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- / Footer -->
+  </div>
+  <!-- / Locomotive Scroll Container -->
+
+  <!-- Theme JS -->
+  <!-- Vendor JS -->
+  <script src="./assets/js/vendor.bundle.js"></script>
+
+  <!-- Theme JS -->
+  <script src="./assets/js/theme.bundle.js"></script>
+</body>
+
+</html>
