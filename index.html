@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Page Meta Tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+
+  <!-- Fix for custom scrollbar if JS is disabled -->
+  <noscript>
+    <style>
+      .simplebar-content-wrapper {
+        overflow: auto;
+      }
+    </style>
+  </noscript>
+
+  <!-- Page Title -->
+  <title>Research - Echohydrology Lab</title>
+  <link rel="icon" href="./assets/images/E.png" type="image/png">
+
+  <style>
+    body {
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .navbar {
+      background-color: #f0f0f0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      box-shadow: 0 4px 6px rgba(9, 9, 9, 0.1);
+    }
+
+    .nav-title {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 2.5rem;
+      color: #060606;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 6px rgba(9, 9, 9, 0.1);
+
+    }
+
+    .nav-logo {
+      position: absolute; /* Make logo position absolute */
+      top: 0.01px; /* Adjust top position */
+      left: 20px; /* Adjust left position */
+      z-index: 1001; /* Ensure logo is above the video */
+    }
+
+    .nav-logo img {
+      width: 190px;
+      height: 80px;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .nav-links a {
+      color: #060606;
+      margin-left: 20px;
+      padding-bottom: 20px;
+      font-size: large;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-align: center;
+    }
+
+    .nav-links a:hover {
+    color: rgb(68, 91, 208); /* Change color to grey on hover */
+    
+}
+
+    /* Font and Font Size Modification */
+    h1.display-3 {
+        font-family:'Poppins', 'sans-serif';
+      font-size: 3rem;
+      color: #060606;
+      text-align: center;
+      margin-top: 1px;
+    }
+
+    .subtitle-md {
+      font-size: 0.9rem;
+      color: grey;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .small {
+      color: white;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .img-fluid {
+      width: 425px;
+      height: 280px;
+      object-fit: cover;
+      box-shadow: 0 4px 6px rgba(10, 6, 6, 0.1);
+    }
+
+    .team-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .team-member {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: left;
+      box-sizing: border-box;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #f0f0f0;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .img-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1;
+      margin-right: -400px;
+      margin-left: -30px;
+      justify-content: left;
+    }
+
+    .img-container img {
+      border-radius: 1px;
+      border-color: #282217;
+    }
+
+    .text-container {
+      padding: 10px;
+      padding-right: 20px;
+      padding-left: 30px;
+      border-radius: 5px;
+      overflow: hidden;
+      word-wrap: break-word;
+      box-sizing: border-box;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .text-container p,
+    .text-container label {
+      font-size: 1rem;
+    }
+
+    .learn-more-btn {
+      display: inline-block;
+      padding: 5px 10px;
+      color: black;
+      background-color: white;
+      border: 2px solid black;
+      border-radius: 3px;
+      text-decoration: none;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 0.9rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      width: 120px;
+    }
+
+    .learn-more-btn:hover {
+      background-color: black;
+      color: white;
+      border: 2px solid black;
+    }
+
+    footer {
+      background-color: #282217;
+      color: white;
+      width: 100%;
+      text-align: center;
+      padding-top: 22px;
+      font-family:'Times New Roman', Times, serif;
+      font-size:medium;
+    }
+
+    .research-text {
+      font-family:'Poppins', 'sans-serif';
+      font-size: 3rem;
+      color: #060606;
+      text-align: center;
+      margin-top: 1px;
+    }
+
+    .container {
+      padding-bottom: 10px;
+    }
+
+    .container-pub {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      padding-bottom: 20px;
+      padding-top:20px;
+      font-size: medium;
+      
+    }
+    .video-background {
+      position: relative;
+      width: 100%;
+      height: 800px;
+      box-shadow: 0 4px 6px rgba(10, 6, 6, 0.1);
+    }
+
+    #background-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .form-label{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-links">
+      <a class="nav-link" href="./index.html">Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+      <a class="nav-link" href="./team.html">Team &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+      <a class="nav-link" href="./research.html">Research &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+      <a class="nav-link" href="./joinus.html">Join Us</a>
+    </div>
+    <div class="nav-logo">
+      <img src="./assets/images/file2.png" alt="logo">
+    </div>
+  </nav>
+  <!-- / Navbar -->
+
+  <!-- Locomotive Scroll Container -->
+  <div data-scroll-container>
+    <!-- Main Content Container -->
+    <div data-scroll-section>
+        <!-- Cover Picture -->
+        <div class="video-background">
+          <video autoplay muted loop id="background-video">
+            <source src="./assets/images/cover.mp4" type="video/mp4">
+          </video>
+        </div>
+        <!-- / Cover Picture -->
+  
+        <!-- Main Section -->
+        <section class="container py-3">
+          <!-- Page Content Goes Here -->
+          <p class="subtitle-sm" align="center">Welcome to the Ecohydrology Lab led by Dr. Xiaonan Tai!</p>
+          <h1 class="display-10 mt-3 mb-3" align="center">ECOHYDROLOGY LAB</h1>
+          <div class="form-label">
+            <p>
+              We are interested in understanding the two-way interactions between vegetation and hydrology and how they might influence ecosystem function and resource sustainability in the context of novel environment.<br>
+              In particular, we employ process-based modeling and empirical approaches to combine in situ and remote sensing observations to <br>
+              1) Understand the patterns and drivers of forest mortality, across scales and ecosystems. <br>
+              2) Quantify the role of groundwater in buffering ecosystems against climate extremes and promoting recovery.<br>
+              3) Develop science-based mitigation strategies for management to promote ecosystem resilience.<br>
+            </p>
+          </div>
+        </section>
+        <!-- / Main Section -->
+
+
+    <!-- Footer -->
+    <footer class="border-top">
+      <div class="container d-flex justify-content-between">
+        <p class="small" style="font-size: 14px; font-family:'Times New Roman', Times, serif">© 2024 Xiaonan Tai. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- / Footer -->
+  </div>
+  <!-- / Locomotive Scroll Container -->
+
+  <!-- Theme JS -->
+  <!-- Vendor JS -->
+  <script src="./assets/js/vendor.bundle.js"></script>
+
+  <!-- Theme JS -->
+  <script src="./assets/js/theme.bundle.js"></script>
+</body>
+
+</html>
