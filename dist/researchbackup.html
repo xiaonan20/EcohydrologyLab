@@ -137,8 +137,8 @@
     }
 
     .img-fluid {
-      width: 550px;
-      height: 400px;
+      width: 470px;
+      height: 350px;
       object-fit: cover;
       box-shadow: 0 4px 6px rgba(10, 6, 6, 0.1);
     }
@@ -167,10 +167,10 @@
       flex-direction: column;
       gap: 10px;
       flex: 1;
-      margin-right: -300px;
-      margin-left: -20px;
+      margin-right: -400px;
+      margin-left: -30px;
       justify-content: left;
-      margin-top: 30px;
+      margin-top: 10px;
      
     }
 
@@ -182,7 +182,7 @@
     .text-container {
       padding: 10px;
       padding-right: 30px;
-      padding-left: 250px;
+      padding-left: 180px;
       border-radius: 5px;
       overflow: hidden;
       word-wrap: break-word;
@@ -191,7 +191,15 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
+
+    .text-container p,
+    .text-container label {
+      font-size:22px;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
     .learn-more-btn {
       display: inline-block;
       padding: 5px 10px;
@@ -255,12 +263,8 @@
     color: #3a5ed3; /* Light grey color on hover */
 }
 .custom-font {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 25px;
-}
-.content{
   font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
+  
 }
   </style>
 </head>
@@ -285,7 +289,7 @@
     <!-- Research Text Section -->
     <div class="video-background">
       <video autoplay muted loop id="background-video">
-        <source src="./assets/images/covertrees.mp4" type="video/mp4">
+        <source src="/Users/ramitadeshmukh/Downloads/RA_WEBSITE/EcohydrologyLab/dist/assets/images/covertrees.mp4" type="video/mp4">
       </video>
     </div>
     <div class="research-text"><span>RESEARCH THEMES</span></div>
@@ -300,35 +304,33 @@
           <!-- Member 1 -->
           <div class="team-member">
             <div class="img-container">
-              <img class="img-fluid" src="./assets/images/G1.png" alt="image">
+              <img class="img-fluid" src="./assets/images/R1-.jpg" alt="image">
             </div>
             <div class="text-container">
-              <p class="custom-font lead mb-2 mt-2"><B>Patterns and drivers of forest mortality, across spatial scales and ecosystem types.</B></p>
-              <p class="content lead mb-3 mt-1">Current and anticipated climate extremes such as drought, heatwaves, and wildfire pose fundamental threats to forest sustainability and the vital services they provide to human society. Widespread forest mortality has occurred across the globe and accurate predictions of forest mortality in response to global environment change are critical for effective conservation. However, our current predictive capacity of observed forest die-off remains limited. Broadly, forest mortality can be influenced by the combination of climatic stress, topography, forest stand properties, and biotic agents such as insects and pathogens. This research theme aims to combine multiple ground-based and remotely sensed observations with mechanistic modeling to gain holistic understandings of the patterns and drivers of forest mortality.</p>
+              <p class="custom-font lead mb-4 mt-2">Patterns and drivers of forest mortality, across spatial scales and ecosystem types.</p>
+              <a href="./research1.html"  target="_blank" class="learn-more-btn">Learn More</a>
             </div>
           </div>
           <!-- / Member 1 -->
           <!-- Member 2 -->
           <div class="team-member">
             <div class="img-container">
-              <img class="img-fluid" src="./assets/images/P2.png" alt="image">
+              <img class="img-fluid" src="./assets/images/R5-.JPG" alt="image">
             </div>
             <div class="text-container">
-              <p class="custom-font lead mb-2 mt-2"><b>Resilience of groundwater dependent ecosystems during climate extremes and their role in promoting post-disturbance recovery.</b></p>
-              <p class="content lead mb-3 mt-1">Groundwater operates across a range of spatial and temporal scales and can provide sources of plant water that are decoupled and/or asynchronous with the timing of precipitation. Since future climate is expected to have more frequent and intense drought, groundwater can be critical for mediating the impact of extreme drought on plants and for promoting ecological refugia and seed banks, given its potentially large storage and slow response to climate change. However, groundwater processes have been understudied and previously ignored by plant science community. This research theme aims to develop numerical models that couple the three-dimensional subsurface water flows with plant functions and to integrate with extensive field observations to advance knowledge about how groundwater might mediate ecosystem responses to climatic extremes and post-disturbance recovery. We are working on an NSF funded project to quantify the resilience of GDE in response to climate variability and a DOE funded project to examine how groundwater promotes forest recovery after wildfire</p>
-            
+              <p class="custom-font lead mb-4 mt-2">Develop science-based adaptation and mitigation strategies for forest management in an increasingly warming and drying world</p>
+              <a href="./research2.html" target="_blank" class="learn-more-btn">Learn More</a>
             </div>
           </div>
           <!-- / Member 2 -->
           <!-- Member 3 -->
           <div class="team-member">
             <div class="img-container">
-              <img class="img-fluid" src="./assets/images/P3.png" alt="image">
+              <img class="img-fluid" src="./assets/images/R3-.jpg" alt="image">
             </div>
             <div class="text-container">
-              <p class="custom-font lead mb-2 mt-2"><b>Develop science-based mitigation strategies for forest management in an increasingly warming and drying world.</b></p>
-              <p class="content lead mb-3 mt-1">Given recent episodes of forest disturbances, developing effective strategies that mitigate forest vulnerability to climate change has become a major research frontier and a central forest management objective. While the physiological mechanisms underlying drought-related tree mortality are relatively well-understood at the organ or whole-plant scale, few studies have examined how forest conditions might be modulated by the interactions among tree arrangement, topography, and water availability at scales that directly influence management decisions. Forest treatments such as stand density reduction through prescribed forest thinning has been employed to mitigate drought impacts, promote tree- and stand-level growth and forest resilience to disturbances. There is broad consensus that thinning potentially reduces total stand water use, increases the water availability for remaining trees, and reduces inter-tree competition for resources. Yet, few process-based vegetation models explicitly account for competition for water among neighboring trees and the complex terrain. This research theme aims to develop forest management tools to quantify tree mortality risks, physiological functions, and water resources in response to stand structure changes.</p>
-            
+              <p class="custom-font lead mb-4 mt-2">Assess the resilience of groundwater dependent ecosystems during climate extremes and their role in promoting post-disturbance recovery</p>
+              <a href="./research3.html"  target="_blank" class="learn-more-btn">Learn More</a>
             </div>
           </div>
           <!-- / Member 3 -->

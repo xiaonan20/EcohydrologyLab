@@ -259,6 +259,7 @@
       text-decoration: none;
       font-family:'Times New Roman', Times, serif;
       font-size:20px;
+      padding-bottom: -35px;
     }
 .paper-link:hover {
     color: #5b6177; /* Light grey color on hover */
@@ -275,6 +276,52 @@
   font-size: 1.5rem; /* Adjust as needed */
   font-weight: bold; /* Make it extra bold if desired */
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.cv-link
+{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font: 20px;
+  color:rgb(244, 240, 240);
+}
+.cv-button {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #f9f5f5;
+  font-weight: bold;
+  padding: 8px 16px;
+  background-color: #454f9b;
+  border-radius: 5px;
+  border: 1px solid #454f9b;
+  transition: background-color 0.3s, border-color 0.3s;
+  width: 130px;
+  height:auto;
+  box-shadow: #060606;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.cv-button:hover {
+  background-color: #766262;
+  border-color: #f1f2f7;
+}
+.cv-link:hover {
+  color: #131212;
+}
+
+.icon {
+  width: 16px; /* Adjust the size as needed */
+  height: 16px;
+  margin-right: 8px;
+}
+.CV{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  align-items: center;
+  font-size: 15px;
+}
+.cv-button:hover{
+  color:white;
 }
 
   </style>
@@ -300,7 +347,7 @@
     <!-- Research Text Section -->
     <div class="video-background">
       <video autoplay muted loop id="background-video">
-        <source src="/Users/ramitadeshmukh/Downloads/RA_WEBSITE/EcohydrologyLab/dist/assets/images/njit.mp4" type="video/mp4">
+        <source src="./assets/images/njit.mp4" type="video/mp4">
       </video>
     </div>
     <div class="research-text"><span>TEAM MEMBERS</span></div>
@@ -312,19 +359,27 @@
       <!-- Page Content Goes Here -->
       <div class="container-pub2">
         <div class="team-grid">
-          <!-- Member 1 -->
-          <div class="team-member">
-            <div class="img-container">
-              <img class="img-fluid" src="./assets/images/tai.jpg" alt="image">
-            </div>
-            <div class="text-container">
-              <p class="custom-font lead mb-1 mt-1"><b>Xiaonan Tai</b></p>
-              <p class="subtitle-xs mb-0 mt-0"><span class='me-2'>Principal investigator</span></p>
-              <label class="form-label mb-3 mt-0">Xiaonan Tai is an ecohydrologist with broad interests in Earth System Science. She combine organism-level plant physiology with landscape-scale hydrological processes to understand the two-way interactions between vegetation and hydrology and how they might influence ecosystem function and resource supply in the context of novel environmental conditions. Her research program uses process-based modeling and empirical approaches to combine in situ and remote sensing observations in order to answer questions related to 1) What are the mechanisms underlying ecosystem response to anticipated warming and drought? 2) How do biotic diversity and abiotic heterogeneity influence ecosystem resilience and resource sustainability to changing climate? 3) How to increase ecosystem resilience through effective management strategies?</label>
-              <a class="paper-link" href="mailto:xiaonan.tai@njit.edu">xiaonan.tai@njit.edu</a>
-            </div>
-          </div>
-          <!-- / Member 1 -->
+      <!-- Member 1 -->
+      <div class="team-member">
+      <div class="img-container">
+      <img class="img-fluid" src="./assets/images/tai.jpg" alt="Xiaonan Tai">
+      </div>
+      <div class="text-container">
+      <p class="custom-font lead mb-1 mt-1"><b>Xiaonan Tai</b></p>
+      <p class="subtitle-xs mb-0 mt-0"><span class='me-2'>Principal investigator</span></p>
+      <label class="form-label mb-1 mt-0">I am an ecohydrologist with broad interests in Earth System Science. I’m interested in combining organism-level plant physiology with landscape-scale hydrological processes to understand the two-way interactions between vegetation and hydrology and how they might influence ecosystem function and resource supply in the context of novel environmental conditions.</label>
+      <a class="paper-link mb-3" href="mailto:xiaonan.tai@njit.edu">xiaonan.tai@njit.edu</a>
+      <!-- View CV link -->
+      <div class="CV mb-3">
+      <a href="./assets/resume/Xiaonan Tai_CV_long.pdf" class="cv-button" target="_blank">
+        <img src="./assets/images/download.png" alt="Download Icon" class="icon">
+        View CV
+      </a>
+      </div>
+  </div>
+</div>
+<!-- / Member 1 -->
+
           <!-- Member 2 -->
           <div class="team-member">
             <div class="img-container">
@@ -333,8 +388,8 @@
             <div class="text-container">
               <p class="custom-font lead mb-1 mt-1"><b>Alifia Ibkar</b></p>
               <p class="subtitle-xs mb-0 mt-0"><span class='me-2'>PhD Student</span></p>
-              <label class="form-label mb-3 mt-0">Our research at the Medicine Bow National Forest in Wyoming focuses on evaluating how groundwater-supported wetlands influence forest resilience against bark beetle outbreaks and wildfires. By integrating data from the USFS Aerial Detection Survey, Monitoring Trends in Burn Severity products, and wetland mapping, we are testing hypotheses related to tree mortality, burn severity, and the buffering effects of wetland ecosystems. Our findings so far suggest that wetlands, supported by regional groundwater, can mitigate burn severity and reduce tree mortality during bark beetle infestations, underscoring the critical role of groundwater in forest ecosystem stability amidst climate change disturbances.</label>
-              <a class="paper-link" href="mailto:ai344@njit.edu">ai344@njit.edu</a>
+              <label class="form-label mb-1 mt-0">I am interested in studying the role of regional groundwater on promoting post fire vegetation recovery. My current  research focuses on the two wildfires occurred in the Medicine Bow National Forest in Wyoming.</label>
+              <a class="paper-link mb-3" href="mailto:ai344@njit.edu">ai344@njit.edu</a>
             </div>
           </div>
           <!-- / Member 2 -->
@@ -346,8 +401,8 @@
             <div class="text-container">
               <p class="custom-font lead mb-1 mt-1"><b>Isaiah Rejouis</b></p>
               <p class="subtitle-xs mb-0 mt-0"><span class='me-2'>PhD Student</span></p>
-              <label class="form-label mb-3 mt-0">Isaiah Rejouis is a PhD student who began research under Dr. Tai's guidance in 2021. His research interest is investigating the relationship between plant trait covariation on drought resilience using model simulations. Rejouis aims to continue ecological research following his doctoral thesis.</label>
-              <a class="paper-link" href="mailto:ior2@njit.edu">ior2@njit.edu</a>
+              <label class="form-label mb-1 mt-0">I am interested in investigating how plant hydraulic and functional traits vary along hillslope gradients, and how plant traits interact with local water availability to mediate ecosystem response to drought.</label>
+              <a class="paper-link mb-3" href="mailto:ior2@njit.edu">ior2@njit.edu</a>
             </div>
           </div>
           <!-- / Member 3 -->
@@ -359,8 +414,15 @@
             <div class="text-container">
               <p class="custom-font lead mb-1 mt-1"><b>Ramita Deshmukh</b></p>
               <p class="subtitle-xs mb-0 mt-0"><span class='me-2'>Masters Student</span></p>
-              <label class="form-label mb-3 mt-0">Ramita Deshmukh is an Information Systems Master's student contributing to the lab to enhance insights and outcomes from the Forest Activity Tracking System (FACTS) and Monitoring Trends in Burn Severity (MTBS) data by leveraging R and Python for data identification, analysis, and focus on critical datasets, and by building interactive dashboards to highlight key findings.</label>
-              <a class="paper-link" href="mailto:rd585@njit.edu">rd585@njit.edu</a>
+              <label class="form-label mb-1 mt-0">I am working with Forest Activity Tracking System (FACTS) and Monitoring Trends in Burn Severity (MTBS) database to gain insights about how forest management practices might influence ecosystem response to disturbances such as wildfire.</label>
+              <a class="paper-link mb-3" href="mailto:rd585@njit.edu">rd585@njit.edu</a>
+              <!-- View CV link -->
+      <div class="CV mb-3">
+        <a href="./assets/resume/RamitaResume.pdf" class="cv-button" target="_blank">
+          <img src="./assets/images/download.png" alt="Download Icon" class="icon">
+          View CV
+        </a>
+        </div>
             </div>
           </div>
           <!-- / Member 4 -->
