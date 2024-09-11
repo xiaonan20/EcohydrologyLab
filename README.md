@@ -1,1 +1,1 @@
-This is ECOHYDROLOGY lAB website
+This is ECOHYDROLOGY LAB website
