@@ -1,4 +1,4 @@
-This repository contains the source code for the Echohydrology Lab website led by Dr. Xiaonan Tai.
-
-Overview:
-The Echohydrology Lab website serves as a platform to showcase research, publications, team members, and opportunities to join the lab. It provides information about Dr. Xiaonan Tai's research interests, ongoing projects, and contact details.
+# rd585-IS601-007
+IS601 007
+Ramita 
+This is my first semester at NJIT and I am very excited to learn about web development. Before joining here, I was working as a professional with Capgemini, L&T Infotech followed by Persistent Systems where I got ample amount of learning as a data analyst.
