@@ -40,7 +40,7 @@
       margin: 0;
       padding: 0;
     }
-    
+
     .navbar {
       background-color: #f0f0f0;
       position: fixed;
@@ -48,43 +48,14 @@
       top: 0;
       z-index: 1000;
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
       align-items: center;
       padding: 0;
       box-shadow: 0 4px 6px rgba(9, 9, 9, 0.1);
     }
 
-    .nav-title {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-size: 2.5rem;
-      color: #060606;
-      margin-top: 20px;
-      margin-bottom: 10px;
-      box-shadow: 0 4px 6px rgba(9, 9, 9, 0.1);
-
-    }
-
-    .video-background {
-      position: relative;
-      width: 100%;
-      height: 400px;
-      box-shadow: 0 4px 6px rgba(10, 6, 6, 0.1);
-    }
-
-    #background-video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
     .nav-logo {
-      position: absolute; /* Make logo position absolute */
-      top: 0.01px; /* Adjust top position */
-      left: 20px; /* Adjust left position */
-      z-index: 1001; /* Ensure logo is above the video */
+      padding-left: 20px;
     }
 
     .nav-logo img {
@@ -98,10 +69,6 @@
       list-style: none;
       margin: 0;
       padding: 0;
-      background-color: #f0f0f0;
-      width: 100%;
-      text-align: center;
-      margin-top: 20px;
     }
 
     .nav-links a {
@@ -109,30 +76,59 @@
       margin-left: 20px;
       padding-bottom: 20px;
       font-size: large;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    /* Hamburger Menu */
+    .hamburger {
+      display: none;
+      font-size: 30px;
+      padding-right: 20px;
+      cursor: pointer;
+    }
+
+    /* Hide the menu on mobile */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #f0f0f0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      .nav-logo img {
+        width: 150px;
+        height: auto;
+      }
+    }
+
+    /* Adjust top margin to avoid overlap with the fixed navbar */
+    .research-text {
+      margin-top: 120px; /* Adjust this based on the height of your navbar */
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.5rem;
       text-align: center;
     }
-    .nav-links a:hover {
-    color: rgb(68, 91, 208); /* Change color to grey on hover */
-    
-}
-    /* Font and Font Size Modification */
+
     h1.display-3 {
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-size: 3rem;
+      font-size: 2.5rem;
       text-align: center;
       margin-bottom: 40px;
-    }
-
-    .subtitle-md {
-      font-size: 0.9rem;
-      color: grey;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-
-    .small {
-      color: white;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
     .container {
@@ -140,182 +136,135 @@
     }
 
     .container-pub {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      background-color: white;
-      padding-bottom: 10px;
-      padding-top:10px;
-      
-    }
-    .container-pub2 {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      box-shadow: none;
-    }
-.form-label{
-  font-family: 'Times New Roman', Times, serif;
-}
-.container-pub {
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
     }
+
     .img-fluid {
-      width: 500px; /* Set the desired width */
-      height: 400px; /* Set the desired height */
-      object-fit: cover; /* This ensures the aspect ratio is maintained */
-      align-self: center;
-    } 
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
     .team-grid {
       display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  align-items: stretch;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
     }
-    .team-member img {
-      max-width: 85%; /* Adjust the percentage as needed to reduce the size */
-    height: auto;
-    }
+
     .team-member {
-display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  box-sizing: border-box;
-  padding: 20px;
-  border-radius: 5px; /* Optional: Add rounded corners */
-  background-color: #f9f9f9;
-  flex: 1;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 5px;
+      flex: 1;
+      width: 100%;
+      max-width: 800px;
+    }
 
-.img-container {
-  width: 100%; /* Set the desired width */
-  max-width: 1200px;
-  height:auto; /* Set the desired height */
-  align-items: center;
-  margin-left: 20px;
-  border-radius: 1px;
-  border-color: #282217;
-}
+    .text-container {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      overflow: hidden;
+      word-wrap: break-word;
+      box-sizing: border-box;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: left;
+      max-width: 800px;
+    }
 
-.img-container img {
-  width: 100%;
-  height:100%;
-  display:block;
-  align-items: center;
-  border-radius: 1px;
-  border-color: #282217;
-}
-.text-container {
-  margin-top: 20px; /* Adjust as needed */
-  padding: 10px; /* Add padding to the text container */
-  background-color: #f9f9f9; /* Optional: Add a background color to the text container */
-  border-radius: 5px; /* Optional: Add rounded corners */
-  overflow: hidden; /* Hide overflow */
-  word-wrap: break-word; /* Break long words */
-  max-width: 700px; /* Ensure the text container does not exceed the image width */
-  box-sizing: border-box; 
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-align: left;
+    .form-label {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+    }
 
-}
-    /* Footer styles */
     footer {
-      background-color: #282217; /* Ensure the background is dark for contrast */
-      color: white; /* Text color */
-      margin-top: 50px; /* Push footer to the bottom */
-      width: 100%; /* Full width */
-      height:155px;
-      text-align: center;
-      padding-top: 20px;
+      background-color: #282217;
+      color: white;
+      width: 100%; /* Ensure it takes full width */
+      text-align: left;
+      padding: 27px; /* Match padding with index page */
     }
 
-.location-link {
-            color: rgb(4, 76, 200);
-            text-decoration: none;
-}
-.map-link {
-            color: rgb(7, 7, 7);
-            text-decoration: none;
-            text-decoration: underline;
-}
-        .email-link {
-            color: black;
-            text-decoration: none;
-        }
-        .email-link:hover {
-            color: rgb(58, 222, 165); /* This is the standard link blue color */
-        }
-        .map-link:hover {
-            color: rgb(38, 81, 209);
-            text-decoration: none;
-            text-decoration: underline;
-}
-.location-link:hover {
-            color: rgb(4, 76, 200);
-            text-decoration: none;
-}
-        .research-text {
-      font-family:'Poppins', 'sans-serif';
-      font-size: 40px;
-      color: #060606;
-      text-align: center;
-      margin-top: 90px;
-    }
-    .form-label{
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 19px;
-}
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      h1.display-3 {
+        font-size: 2rem;
+      }
 
+      .team-member {
+        max-width: 100%;
+      }
+
+      .text-container {
+        max-width: 100%;
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1.display-3 {
+        font-size: 1.5rem;
+      }
+
+      .img-fluid {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 
 <body>
   <!-- Navbar -->
   <nav class="navbar">
-    <div class="nav-links">
-      <a class="nav-link" href="./index.html">Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</a>
-      <a class="nav-link" href="./team.html">Team &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</a>
-      <a class="nav-link" href="./research.html">Research &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</a>
-      <a class="nav-link" href="./joinus.html">Join Us</a>
-    </div>
     <div class="nav-logo">
       <img src="./assets/images/file2.png" alt="logo">
+    </div>
+    <!-- Hamburger Menu Icon -->
+    <span class="hamburger" onclick="toggleMenu()">&#9776;</span>
+    <div class="nav-links" id="navLinks">
+      <a class="nav-link" href="./index.html">Home</a>
+      <a class="nav-link" href="./team.html">Team</a>
+      <a class="nav-link" href="./research.html">Research</a>
+      <a class="nav-link" href="./joinus.html">Join Us</a>
     </div>
   </nav>
   <!-- / Navbar -->
 
-  <!-- Locomotive Scroll Container -->
+  <!-- Main Content -->
   <div data-scroll-container>
     <div class="research-text"><span>JOIN US</span></div>
 
-    <!-- / Research Text Section -->
-
     <!-- Main Section -->
     <section class="container py-3">
-      <!-- Page Content Goes Here -->
       <div class="container-pub2">
         <div class="team-grid">
-          <!-- Member 1 -->
           <div class="team-member">
-            <div class="position-relative">
-              <div class="text-container">
-                <label class="form-label mb-3 mt-0"><strong>Thank you for visiting</strong> <br>
-
-                  If you are willing in joining our team, please reach out to Dr. Xiaonan Tai with your statement of interest and CV. We invite graduate students, undergraduate students, and postdoctoral associates from computer science engineering or related fields to gain valuable research experience with us.
-                  
-                </label>
-                <label class="form-label mb-3 mt-0"><strong>Address:</strong><br>
-                  Contact - xiaonan.tai at njit.edu
-                <br>
-                  Office - 428B Central King Building, 100 Summit St, Newark, NJ 0710<a class="location-link" href="https://www.google.com/maps/search/?api=1&query=428B+Central+King+Building,100+Summit+St,Newark,NJ+0710" target="_blank">
-                      <b>(View directions)</b>
+            <div class="text-container">
+              <label class="form-label mb-3 mt-0"><strong>Thank you for visiting</strong><br>
+                If you are interested in joining our team, please reach out to Dr. Xiaonan Tai with your statement of interest and CV. We invite graduate students, undergraduate students, and postdoctoral associates from computer science or related fields to gain valuable research experience with us.
+              </label>
+              <label class="form-label mb-3 mt-0"><strong>Address:</strong><br>
+                Contact - xiaonan.tai at njit.edu<br>
+                Office - 428B Central King Building, 100 Summit St, Newark, NJ 0710
+                <a class="location-link" href="https://www.google.com/maps/search/?api=1&query=428B+Central+King+Building,100+Summit+St,Newark,NJ+0710" target="_blank">
+                  <b>(View directions)</b>
                 </a>
-                </label>
-                <label><a class="map-link" href="https://www.google.com/maps/place/Central+King+Building/@40.7419054,-74.1777009,2514m/data=!3m1!1e3!4m6!3m5!1s0x89c2537de93169cf:0x403193bbfc511b70!8m2!3d40.7420906!4d-74.1778214!16s%2Fg%2F11cs123258?entry=ttu" target="_blank"><b>View Satellite Map</b></a></label>
-                <div class="img-container">
-                  <img class="img-fluid" src="./assets/images/map.png" alt="image">
-                </div>
+              </label>
+              <label><a class="map-link" href="https://www.google.com/maps/place/Central+King+Building/@40.7419054,-74.1777009,2514m/data=!3m1!1e3!4m6!3m5!1s0x89c2537de93169cf:0x403193bbfc511b70!8m2!3d40.7420906!4d-74.1778214!16s%2Fg%2F11cs123258?entry=ttu" target="_blank"><b>View Satellite Map</b></a></label>
+              <div class="img-container">
+                <img class="img-fluid" src="./assets/images/map.png" alt="map image">
               </div>
-          <!-- / Member 1 -->
-    
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -323,15 +272,20 @@ display: flex;
 
     <!-- Footer -->
     <footer class="border-top">
-      <div class="container d-flex justify-content-between">
+      <div class="container">
         <p class="small" style="font-size: 14px; font-family:'Times New Roman', Times, serif">© 2024 Xiaonan Tai. All rights reserved.</p>
       </div>
     </footer>
-    <!-- / Footer -->
   </div>
-  <!-- / Locomotive Scroll Container -->
 
-  <!-- Theme JS -->
+  <!-- JavaScript to Toggle the Menu -->
+  <script>
+    function toggleMenu() {
+      var navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+
   <!-- Vendor JS -->
   <script src="./assets/js/vendor.bundle.js"></script>
 
