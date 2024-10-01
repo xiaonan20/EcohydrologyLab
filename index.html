@@ -63,12 +63,11 @@
       margin-left: 20px;
       padding-bottom: 20px;
       font-size: large;
-      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       text-align: center;
       text-decoration: none !important;
       border-bottom: none !important;
     }
-
 
     /* Hamburger Menu */
     .hamburger {
@@ -79,12 +78,11 @@
     }
 
     @media (min-width: 769px) {
-  .navbar .nav-links a {
-    text-decoration: none !important;
-    border-bottom: none !important;
-  }
-
-}
+      .navbar .nav-links a {
+        text-decoration: none !important;
+        border-bottom: none !important;
+      }
+    }
 
     /* Hide the menu on mobile */
     @media (max-width: 768px) {
@@ -118,6 +116,7 @@
       width: 100%;
       height: 75vh;
       box-shadow: 0 4px 6px rgba(10, 6, 6, 0.1);
+      overflow: hidden;
     }
 
     #background-video {
@@ -127,6 +126,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      z-index: -1;
     }
 
     /* Responsive Styles */
@@ -168,10 +168,12 @@
   <!-- Main Content -->
   <div data-scroll-container>
     <div data-scroll-section>
-      <!-- Cover Picture -->
+      <!-- Cover Video -->
       <div class="video-background">
-        <video autoplay muted loop id="background-video">
+        <video autoplay muted loop playsinline id="background-video">
           <source src="./assets/images/cover.mp4" type="video/mp4">
+          <source src="./assets/images/cover.webm" type="video/webm">
+          Your browser does not support the video tag.
         </video>
       </div>
 
@@ -206,6 +208,12 @@
       var navLinks = document.getElementById('navLinks');
       navLinks.classList.toggle('active');
     }
+
+    // Play video manually if autoplay is blocked
+    document.addEventListener('DOMContentLoaded', function () {
+      var video = document.getElementById('background-video');
+      video.play();
+    });
   </script>
 
   <!-- Vendor JS -->
