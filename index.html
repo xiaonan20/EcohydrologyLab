@@ -25,6 +25,7 @@
       background-color: #f0f0f0;
       margin: 0;
       padding: 0;
+      color: #060606; /* Ensure body text color is black */
     }
 
     .navbar {
@@ -59,7 +60,7 @@
 
     /* More specific CSS selector to ensure no underline or border */
     .navbar .nav-links a {
-      color: #060606;
+      color: #060606; /* Ensure navbar link text is black */
       margin-left: 20px;
       padding-bottom: 20px;
       font-size: large;
@@ -127,6 +128,11 @@
       height: 100%;
       object-fit: cover;
       z-index: -1;
+    }
+
+    /* Global text styling to ensure black text */
+    body, p, h1, h2, h3, h4, h5, h6, a {
+      color: #060606; /* Ensure all text elements are black */
     }
 
     /* Responsive Styles */
