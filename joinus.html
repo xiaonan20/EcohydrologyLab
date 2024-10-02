@@ -34,11 +34,13 @@
   <title>Join Us - Echohydrology Lab</title>
   <link rel="icon" href="./assets/images/E.png" type="image/png">
 
+  <!-- Custom Styles -->
   <style>
     body {
       background-color: #f0f0f0;
       margin: 0;
       padding: 0;
+      color: #060606; /* Ensure body text color is black */
     }
 
     .navbar {
@@ -72,7 +74,7 @@
     }
 
     .nav-links a {
-      color: #060606;
+      color: #060606; /* Ensure navbar link text is black */
       margin-left: 20px;
       padding-bottom: 20px;
       font-size: large;
@@ -192,6 +194,16 @@
       width: 100%; /* Ensure it takes full width */
       text-align: left;
       padding: 27px; /* Match padding with index page */
+    }
+
+    /* Global text styling to ensure black text except footer */
+    body, p, h1, h2, h3, h4, h5, h6, a {
+      color: #060606; /* Ensure all text elements are black */
+    }
+
+    /* Preserve white text color for the footer */
+    footer, footer p {
+      color: white;
     }
 
     /* Responsive Styles */
