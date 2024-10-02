@@ -39,6 +39,7 @@
       background-color: white;
       margin: 0;
       padding: 0;
+      color: #060606; /* Ensure body text color is black */
     }
 
     .navbar {
@@ -211,6 +212,15 @@
       padding-top: 22px;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-size: medium;
+    }
+
+    /* Global text styling to ensure black text except footer */
+    body, p, h1, h2, h3, h4, h5, h6, a {
+      color: #060606;
+    }
+    /* Preserve white text color for the footer */
+    footer, footer p {
+      color: white;
     }
 
     @media (max-width: 768px) {
@@ -393,19 +403,14 @@
     <!-- / Sub Section -->
 
     <!-- Footer -->
-    <footer class="border-top">
-      <div class="container d-flex justify-content-between">
+    <footer>
+      <div class="container d-flex">
         <p class="small" style="font-size: 14px; font-family:'Times New Roman', Times, serif">© 2024 Xiaonan Tai. All rights reserved.</p>
       </div>
     </footer>
     <!-- / Footer -->
   </div>
-  <!-- / Locomotive Scroll Container -->
 
-  <!-- Theme JS -->
-  <!-- Vendor JS -->
-  <script src="./assets/js/vendor.bundle.js"></script>
-  <script src="./assets/js/theme.bundle.js"></script>
 
   <!-- JavaScript to Toggle the Menu -->
   <script>
@@ -419,6 +424,10 @@
       video.play();
     });
   </script>
+  <!-- Vendor JS -->
+  <script src="./assets/js/vendor.bundle.js"></script>
+  <!-- Theme JS -->
+  <script src="./assets/js/theme.bundle.js"></script>
 </body>
 
 </html>
