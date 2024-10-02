@@ -39,6 +39,7 @@
       background-color: #f0f0f0;
       margin: 0;
       padding: 0;
+      color: #060606; /* Ensure body text color is black */
     }
 
     .navbar {
@@ -79,8 +80,6 @@
       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       text-align: center;
     }
-
-
 
     /* Hamburger Menu */
     .hamburger {
@@ -220,6 +219,16 @@
       color: #060606;
       text-align: center;
       margin-top: 20px;
+    }
+
+    /* Global text styling to ensure black text except footer */
+    body, p, h1, h2, h3, h4, h5, h6, a {
+      color: #060606;
+    }
+
+    /* Preserve white text color for the footer */
+    footer, footer p {
+      color: white;
     }
 
     /* Responsive Styles */
