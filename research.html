@@ -54,6 +54,16 @@
       padding: 0;
       box-shadow: 0 4px 6px rgba(9, 9, 9, 0.1);
     }
+    .navbar .nav-links a {
+      color: #060606; /* Ensure navbar link text is black */
+      margin-left: 20px;
+      padding-bottom: 20px;
+      font-size: large;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-align: center;
+      text-decoration: none !important;
+      border-bottom: none !important;
+    }
 
     .nav-logo {
       padding-left: 20px;
@@ -62,7 +72,6 @@
     .nav-logo img {
       width: 190px;
       height: 80px;
-      padding-left: 20px;
     }
 
     .nav-links {
@@ -341,9 +350,10 @@
     <section class="container py-3">
       <!-- Page Content Goes Here -->
       <b><span style="font-size: 27px; font-family: cursive"><i>Publications</i></span></b><br>
-      <div class="container-pub" style="background-color: #f0f0f0;">
+      <div class="container-pub mt-2" style="background-color: #f0f0f0;">
         <ul>
           <!-- Publications List -->
+          <p class="subtitle-md" style="font-size: 0.9rem; color: #f0f0f0;">--------------------------------------------------------------------------------------------------------------------------------------------------------</p>
           <a class="paper-link" href="https://iopscience.iop.org/article/10.1088/1748-9326/ad29aa/meta" target="_blank">Mitigating drought mortality by incorporating topography into variable forest thinning strategies</a>
           <p class="subtitle-md" style="font-size: 0.9rem; color: grey; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><i>Thomas, A., Kolb, T., Biederman, J., Venturas, M.D., Ma, Q., Yang, D., Dore, S. and Tai, X., 2024. Mitigating drought mortality by incorporating topography into variable forest thinning strategies. Environmental Research Letters.</i></p>
 
@@ -402,6 +412,7 @@
 
           <a class="paper-link" href="https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.14098" target="_blank">Plant hydraulics improves and topography mediates prediction of aspen mortality in southwestern USA</a>
           <p class="subtitle-md" style="font-size: 0.9rem; color: grey; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><i>Tai, X., Mackay, D.S., Anderegg, W.R., Sperry, J.S. and Brooks, P.D., 2017. Plant hydraulics improves and topography mediates prediction of aspen mortality in southwestern USA. New Phytologist, 213(1), pp.113-127.</i></p>
+          <p class="subtitle-md" style="font-size: 0.9rem; color: #f0f0f0;">--------------------------------------------------------------------------------------------------------------------------------------------------------</p>
         </ul>
       </div>
     </section>
@@ -433,6 +444,18 @@
   <script src="./assets/js/vendor.bundle.js"></script>
   <!-- Theme JS -->
   <script src="./assets/js/theme.bundle.js"></script>
+
+    <!-- Force Removal of Underline via JavaScript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const navLinks = document.querySelectorAll('.nav-links a');
+        navLinks.forEach(link => {
+          link.style.textDecoration = 'none';
+          link.style.borderBottom = 'none';
+        });
+      });
+    </script>
+
 </body>
 
 </html>
